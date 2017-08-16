@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dex.name %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @dex.descripcion %>
+</p>
+
+<%= image_tag @dex.image.url(:medium) %>
+
+
+<%= link_to 'Edit', edit_dex_path(@dex) %> |
+<%= link_to 'Back', dexes_path %>
